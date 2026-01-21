@@ -1,2 +1,91 @@
 @charset "UTF-8";
+/* Named Selectors 
+----------------------------------------------*/   
+h2{
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
 
+}
+
+/* Id Selectors 
+---------------------------------------------*/
+#project
+{
+    background-color: green;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Class Selectors
+---------------------------------------------*/ 
+.about
+{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color:blueviolet;
+}
+
+/*Contextual Selectors
+---------------------------------------------*/
+section p{
+    color: darkorange
+}
+
+.subproject p{
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid black;
+}
+/* Grouped Selectors
+---------------------------------------------*/ 
+
+h2, h1, h3{
+    color: darkred;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*Pseudo-class Selectors
+---------------------------------------------*/ 
+a:link{
+    text-decoration: none;
+    color:darkgreen;
+    font-weight: bold;    
+}
+
+a:visited{
+    color: red;
+    font-weight: bold;    
+}
+a:focus {
+    background-color: yellow;
+}
+a:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+a:active {
+    
+    color: darkorange;
+    background-color: orange;
+}
+
+/* structural Pseudo-class Selectors
+---------------------------------------------*/ 
+li:nth-child(3){
+    background-color: white;
+}
+li:nth-of-type(odd){
+    font-weight: bold;
+}
+article section:last-of-type{
+
+}
+
+/*Sibling and Pseudoelement Selectors
+---------------------------------------------*/ 
+h2 + p::first-line{
+    font-weight: bold;
+    font-style: italic;
+}
