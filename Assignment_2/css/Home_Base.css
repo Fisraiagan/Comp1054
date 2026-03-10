@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid #ccc;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        " sidebar main  main  "
+        " aside2 main2   main2"
+        "  aside2 main2   main2"
+        "footer footer footer";
+    gap: 2rem;
+}
+
+header { 
+    grid-area: header;
+    text-align: left;
+    border-bottom: 4px solid #333;
+
+} 
+.region{
+    text-align:left;
+    font-size: 0.9rem;
+}
+
+h1 em{
+    color:red;
+}
+article:nth-of-type(1) h2{
+    color:red;
+}
+
+article:nth-of-type(1) img{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+article:nth-of-type(2) h2{
+    font-size:3.5rem;
+    font-weight: 50;
+    font-family: 'Arial', sans-serif;
+     color: #333;    
+}
+
+p+h2{
+    margin-top: 1rem;
+    color:red
+}
+article img {
+    display: block;
+    margin: 0 auto;
+}
+
+main article:nth-of-type(1) { 
+    grid-area: main; 
+     gap:4rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 6px;
+    line-height: 1.4;
+    
+}
+main article:nth-of-type(2) { 
+    grid-area: main2; 
+     background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    line-height: 1.4;
+   
+}
+main aside:nth-of-type(1)   {
+     grid-area: sidebar;
+     background: #fff8e6;
+    padding: 1.5rem;
+    border-right: 6px solid #e0a100;
+    border-radius: 6px;
+    font-size: 1.95rem;
+ }
+main aside:nth-of-type(2)   { 
+    grid-area: aside2;
+    background: rgba(70, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-right: 6px solid #4a90e2;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: inset 0 0 10px rgba(5, 166, 51, 0.1);}
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ccc;
+    color: #666;
+}
