@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+}
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.tabs ul{
+list-style:none;
+padding: 0;
+margin:0;
+display:flex;
+}
+
+.tabs li{
+	margin: 0;
+}
+
+
+.tabs a {
+	display:block;
+	padding:10px 20px;
+	background:#eee;
+	color:#333;
+	border:1px solid #ccc;
+	
+}
+
+.tabs li+ li a{
+	border-left:none;
+}
+
+.tabs a:hover{
+	background-color:lightblue;	
+}
+
+.tabs a:active{
+	color: white;
+}
+
+
+div [role="tabpanel"]{
+	display:none;
+	border:5px solid #ccc;
+	padding: 1rem;
+	background-color:white;
+	margin-top:1rem;
+}
+
+
+div [role="tabpanel"]:target {
+	display:block;
+}
+
+
+.tabs a[href="#tabpanel1"]{
+	border-top-left-radius: 1rem;
+	box-shadow:  0 2.5px 3px gray;
+}
+
+
+
+.tabs a[href="#tabpanel2"]{
+	box-shadow:  0 2.5px 3px gray;
+}
+.tabs a[href="#tabpanel3"]{
+	border-top-right-radius: 1rem;
+	box-shadow:  0 2.5px 3px gray;
+
+}
+
