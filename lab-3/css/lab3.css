@@ -39,9 +39,6 @@ display:flex;
 	
 }
 
-.tabs li+ li a{
-	border-left:none;
-}
 
 .tabs a:hover{
 	background-color:lightblue;	
