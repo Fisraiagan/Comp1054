@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+html {
+	box-sizing: border-box;
+    
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body{
+    
+background: url("../../images/Project_et.jpg") no-repeat top left;
+float:left;
+display:flow-root;
+}
+main{
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(8, 201, 211, 0.8);
+
+}
+
+header{
+    margin: 0 auto;
+    border: 2px dashed black;
+    width: 80%;
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(97, 154, 17, 0.652);
+
+}
+
+header nav ul li{
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    display:inline;
+    /* float: right; */
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+section h2{ 
+    text-align: center;
+    margin-top: 20px;
+    font-family: Chela One;
+}
+section p{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section p:nth-of-type(1) {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration-style: wavy;
+    text-decoration: underline wavy rgba(8, 201, 211, 0.8);
+}
+section p:nth-of-type(1){
+    text-align: justify;
+    line-height: 1.4;
+    font-family: Libre Baskerville, serif;
+    flex-direction: column;
+    border-top: 5px solid black; 
+    padding: 0 20px;
+    
+    
+}
+section p:nth-of-type(2) {
+    font-weight: 200;
+    font-family: Chela One;
+    text-align: justify;
+     border-top: 5px solid black; 
+    padding: 0 20px;
+    background-color:lightblue ;
+}
+
+
+article  {
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;  
+    line-height: 1.8;
+    font-family: permanent marker;
+    background-color: goldenrod;   
+}
+article h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
