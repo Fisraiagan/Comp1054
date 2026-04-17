@@ -166,6 +166,12 @@ nav a:hover{
 nav a:hover::after{
     width: 100%;
 }
+
+.container ul li{
+    margin-bottom: .5rem;
+    color: var(--color-text);
+
+}
 /*Main Content
 ----------------------------------------------*/
 main h2{
@@ -196,14 +202,17 @@ main > .container{
 
 #about{
     grid-area: about;
+    background: linear-gradient(90deg, #d69457, #9dd657, #84b8b7);
 }
 
 #guidelines{
     grid-area:guidelines;
+    background: linear-gradient(90deg, #d69457, #9dd657, #84b8b7);
 }
 
 #contribute{
     grid-area:contribute;
+    background: linear-gradient(90deg, #d69457, #9dd657, #84b8b7);
 }
 
 main article {
@@ -246,7 +255,7 @@ blockquote{
 /*Aside
 ------------------------------------------*/
 aside{
-    background:var(--color-light);
+    background: linear-gradient(90deg,#84b8b7 , #9dd657,#d69457 );
     margin:2rem 0;
     padding:2rem 0;
     border-top: 3px solid #ddd;
@@ -283,7 +292,7 @@ aside a:hover{
   color: var(--color-background);
   padding: 2rem 0;
   text-align: center;
-}
+} 
   
 .page-footer a {
   color: var(--color-secondary);
