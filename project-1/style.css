@@ -93,7 +93,13 @@ header::after {
   background: linear-gradient(90deg, #d69457, #9dd657, #84b8b7);
 }
 
+a:hover{
+    color: var(--color-text);
+}
 
+p a:hover{
+    color: var(--color-text);
+}
 
 
 
@@ -314,7 +320,7 @@ aside a:hover{
 .page-footer li {
   margin: .5rem 0;
 }
-
+/* media query for smaller screens */
 @media(max-width: 768px){
     main > .container{
         grid-template-areas: 
